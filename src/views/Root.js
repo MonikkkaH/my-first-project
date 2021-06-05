@@ -8,6 +8,7 @@ import MainTemplate from 'components/templates/MainTemplate/MainTemplate';
 import AddUser from 'views/AddUser';
 import Dashboard from 'views/Dashboard';
 import UsersProvider from 'providers/UsersProvider';
+import Autoclaim from './Autoclaim';
 
 const Root = () => {
   return (
@@ -21,9 +22,13 @@ const Root = () => {
                 <Route path="/add-user">
                   <AddUser />
                 </Route>
+                <Route path="/autoclaim">
+                  <Autoclaim />
+                </Route>
                 <Route path="/">
                   <Dashboard />
                 </Route>
+               
               </Switch>
             </Wrapper>
           </UsersProvider>

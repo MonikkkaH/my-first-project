@@ -15,6 +15,10 @@ const Navigation = () => {
         Dashboard
       </StyledLink>
       <StyledLink to="/add-user">Add user</StyledLink>
+      <StyledLink exact to="/autoclaim">
+        Autoclaim
+      </StyledLink>
+
     </Wrapper>
   );
 };
